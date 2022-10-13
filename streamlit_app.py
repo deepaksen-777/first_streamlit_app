@@ -2,6 +2,6 @@ import streamlit
 
 streamlit.title('My name is Deepak')
 streamlit.header('Breakfast Menu')
-streamlit.text('Bread & omelette')
-streamlit.text('Daal Roti')
-streamlit.text('Healthy food')
+streamlit.text('Omega 3 & Blueberry Oatmeal')
+streamlit.text('Kale, Spinach & Rocket Smoothie')
+streamlit.text('Hard-Boiled Free-Range Egg')
