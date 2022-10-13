@@ -1,3 +1,3 @@
 import streamlit
 
-Streamlit.title('My name is Deepak')
+streamlit.title('My name is Deepak')
