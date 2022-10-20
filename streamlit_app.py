@@ -31,3 +31,7 @@ fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon"
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # it will show data in table formate
 streamlit.dataframe(fruityvice_normalized)
+
+#Add a Text Entry Box and Send the Input to Fruityvice as Part of the API Call
+fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
+streamlit.write('The user entered ', fruit_choice)
