@@ -27,12 +27,12 @@ streamlit.dataframe(fruits_to_show)
 streamlit.header("Fruityvice Fruit Advice!")
 
 try:
-    #Add a Text Entry Box and Send the Input to Fruityvice as Part of the API Call
-    fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
-    if not fruit_choice:
-        streamlit.error("Please select a fruit to get information.")
+  #Add a Text Entry Box and Send the Input to Fruityvice as Part of the API Call
+  fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
+  if not fruit_choice:
+      streamlit.error("Please select a fruit to get information.")
         #streamlit.write('The user entered ', fruit_choice)
-    else:
+  else:
         #Get the responce at the end 
          fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+fruit_choice)
          # it will normalize the data
@@ -40,7 +40,7 @@ try:
          # it will show data in table formate
          streamlit.dataframe(fruityvice_normalized)
          
- except URLError as e:
+except URLError as e:
      streamlit.error()
     
     
